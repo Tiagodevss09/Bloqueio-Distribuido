@@ -1,0 +1,6 @@
+@Bloqueio.Distribuido.API_HostAddress = http://localhost:5243
+
+GET {{Bloqueio.Distribuido.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

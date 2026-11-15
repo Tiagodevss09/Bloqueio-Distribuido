@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>391aece9-0e51-455a-a5ad-ec7f30824fff</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.3.13" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.19" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
+    <PackageReference Include="StackExchange.Redis" Version="2.8.24" />
+    <PackageReference Include="DistributedLock.Redis" Version="1.0.0" />
+    <PackageReference Include="Redlock.Net" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bloqueio.Distribuido.Application\Bloqueio.Distribuido.Application.csproj" />
+    <ProjectReference Include="..\Bloqueio.Distribuido.Domain\Bloqueio.Distribuido.Domain.csproj" />
+    <ProjectReference Include="..\Bloqueio.Distribuido\Bloqueio.Distribuido.csproj" />
+  </ItemGroup>
+
+</Project>
